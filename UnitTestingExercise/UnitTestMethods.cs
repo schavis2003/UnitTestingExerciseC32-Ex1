@@ -23,13 +23,13 @@ namespace UnitTestingExercise
         }
             
 
-        // Create a Multiply method that passes 2 integers
+        // Create a Multiply method that passes 2 integers------DONE
         public int Multiply(int one, int two)
         {
             return one * two;
         }
 
-        // Create a Divide method that passes 2 integers
+        // Create a Divide method that passes 2 integers-------DONE
         public int Divide(int one, int two)
         {
             return one / two;
@@ -37,15 +37,7 @@ namespace UnitTestingExercise
 
 
 
-        // Create 2 methods that will utilize the [Fact] tests you wrote
-        public int YourMethodName()
-        {
-            return 'h';
-        }
-        public int YourMethodName2()
-        {
-            return 'h';
-        }
+        
 
 
         

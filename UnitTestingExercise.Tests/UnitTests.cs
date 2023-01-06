@@ -23,8 +23,8 @@ namespace UnitTestingExercise.Tests
         }
 
         [Theory]
-        [InlineData(5,5,0)]
-        [InlineData(-5, 20, 15)]
+        [InlineData(5, 5, 0)]
+        [InlineData(-5, 20, -25)]
         public void Subtract(int minuend, int subtrhend, int expected)
         {
             //Arrange
@@ -39,7 +39,7 @@ namespace UnitTestingExercise.Tests
         }
 
         [Theory]
-        [InlineData(2,2,4)]
+        [InlineData(2, 2, 4)]
         [InlineData(5, 4, 20)]
         public void Multiply(int num1, int num2, int expected)
         {
@@ -70,33 +70,8 @@ namespace UnitTestingExercise.Tests
             Assert.Equal(expected, actual);
         }
 
-        [Fact]
-#pragma warning disable xUnit1001 // Fact methods cannot have parameters
-        public void YourMethodName(object tester)
-#pragma warning restore xUnit1001 // Fact methods cannot have parameters
-        {
-            //Arrange
-            var expected = 'h';
-
-            //Act
-            var actual = tester.YourMethodName();
-
-            //Assert
-            Assert.Equal(expected, actual);
-
-        }
-
-        [Fact]
-        public void YourMethodName2(System.Collections.Generic.IEnumerable<object> actual)
-        {
-            //Arrange
-            var expected = 'h';
-
-            //Act
 
 
-            //Assert
-            Assert.Equal(expected, actual);
-        }
     }
 }
+
